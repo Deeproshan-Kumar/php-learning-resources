@@ -2236,3 +2236,190 @@ echo $a;
 }
 echo $a;
 
+WORKING WITH OPERATORS 
+The PHP supports two versions of operators.
+1). Legacy Operators 5.x version
+Trick : Are (Arithmetic) Re (Relational) Kaun (Conditional) Log (Logical) Special (Special) Bit (Bitwise) Assign (Assignment) Karenge
+(i)	Arithmetic Operator
+Used to perform arithmetic or mathematical calculations like +, -, /, *, % etc. Arithmetic operators are classified into two categories, 
+1.	Unary Operator
+2.	Binary Operator
+Expression = Operand + Operand (Where, + is operator)
+
+Operand : Variables, constants participating in mathematical expression is called operands.
+Example : $x+$y ($x and $y are operands and + is operator)
+20-10 (20 and 10 are constants and – is operator)
+
+Operator : Symbol b/w two are more than two operands with unique property of mathematical solution is called as operators.
+Example : 50+20 = 70
+
+Expression : N number of operands separated by logical arrangement of operators.
+Example : /2+2 = Expression (Invalid)
++2/2 = Expression (Valid)
+
+Solution : The result after evaluating the expression is known as solution.
+
+Unary : Operators that can bring change in the value by prefixing at the starting position.
+2 : 2>0 2 is a +ve integer : unsigned Integer
+-2 : 2<0 -2 is a -ve integer : signed Integer
+Note :: Total size of an integer : 16-bit [2 bytes]  |  32-bit [4 bytes]  |  64-bit [8 bytes]
+
+(ii)	Relational Operator
+(iii)	Conditional Operator
+(iv)	Logical Operator
+(v)	Special Operator
+(vi)	Bitwise Operator
+(vii)	Assignment Operator
+
+2). Modern Operators 7.x version
+(i) Membership Operator
+(ii) Null Coalescing Operator
+(iii) Flagship Operator
+
+
+FLOW CONTROLS IN PHP
+Flow Controls 
+     Flow controls basically means how a program will execute in primary memory at runtime. 
+Normal Execution of Program
+    There are two types of approach for normal execution of any program.
+1). Top to Bottom Approach
+The program will start from very first line and stop at last line of the program then it’s called normal execution of program in Top to Bottom Approach.
+Example :
+<?php
+// WAP in PHP to show normal execution of the program from top to bottom.
+echo "Line ".__LINE__." is executing...\n"; 
+// Where __LINE__ magic constant and magled constant.
+echo "Line ".__LINE__." is executing...\n";
+echo "Line ".__LINE__." is executing...\n";
+echo "Line ".__LINE__." is executing...\n";
+echo "Line ".__LINE__." is executing...\n";
+echo "Line ".__LINE__." is executing...\n";
+echo "Line ".__LINE__." is executing...\n";
+echo "Line ".__LINE__." is executing...\n";
+echo "Line ".__LINE__." is executing...\n";
+echo "Line ".__LINE__." is executing...\n";
+?>
+
+We can control flow of any program from various way,
+1). Decision Control Block : It allows the user, to control the execution of specific line of code.
+(i) Selection Block
+(ii) Conditional Block
+(iii) Nested Conditional Block
+2). Return Block 
+3). Loop Block
+4). Jump Control Block
+Note :: Statement basically means piece of code inside any block and wrapping those lines of statement is called block.
+2). Left to Right Approach
+When any expression will be solved it will be solved from left to right by default. But if we want to control this normal execution we can modify it to right to left also.
+This can be done by using operators, means operator will utilize associativity and precedence order to achieve this.
+e.g. 
+2+2+2-2  L -> R (+, - operator associativity L -> R)
+$x=2+2  R -> L (= operator associativity R -> L)
+
+Execution L-R
+echo “The result = “.10+20; Associativity L -> R
+Error : Non-numeric value encountered error, because .has highest priority then +/-.
+In case if we use parenthesis () then,
+Execution will be R->L
+echo “The result = “.(10+20);
+                                           ^
+                           L <- R <--|
+Step : echo “The result = “.30;
+                          ^
+                          |--> L -> R
+
+
+
+
+
+OPERATOR PRECEDENCE
+
+Selection Block
+Switch Block : When we have multiple cases and we want to execute, a given case then we go for switch block (statements).
+Switch statements are considered to be best alternative of else-if ladder.
+Switch can be two types :
+1). Unchained Switch
+2). Chained Switch
+General Syntax of Switch Block
+Switch(<evaluated expression>){
+case <value 1> :
+// statement 1
+// statement …
+// statement n
+break;
+
+case <value 2> :
+// statement 1
+// statement …
+// statement n
+break;
+
+case <value n> :
+// statement 1
+// statement …
+// statement n
+break;
+
+default :
+// statement 1
+// statement …
+// statement n
+break;
+}
+Note :: Expression --> Evaluate --> Result
+2>2 --> true or false invalid
+This expression should be equal to one of case.
+PROGRAM_1
+<?php
+// WAP in PHP to find out odd and even number using switch statement.
+$num=readline("Enter a number : ");
+switch($num%2){
+case 0:
+    echo "$num is even";
+break;
+case 1:
+    echo "$num is odd";
+break;
+}
+?>
+
+PROGRAM_2
+<?php
+// WAP in PHP to find out odd and even number using switch statement.
+$num=readline("Enter a number : ");
+switch(!($num%2==0)){
+case 0:
+    echo "$num is even";
+break;
+case 1:
+    echo "$num is odd";
+break;
+}
+?>
+
+PROGRAM_3
+<?php
+// WAP in PHP to find out odd and even number using switch statement.
+$num=readline("Enter a number : ");
+switch(!($num%2==0)){
+case 0:
+     echo "$num is even";
+break;
+default:
+     echo "$num is odd";
+break;
+}
+?>
+
+CTYPE FUNCTIONS
+ctype_alnum — Check for alphanumeric character(s)
+ctype_alpha — Check for alphabetic character(s)
+ctype_cntrl — Check for control character(s)
+ctype_digit — Check for numeric character(s)
+ctype_graph — Check for any printable character(s) except space
+ctype_lower — Check for lowercase character(s)
+ctype_print — Check for printable character(s)
+ctype_punct — Check for any printable character which is not whitespace or an alphanumeric character
+ctype_space — Check for whitespace character(s)
+ctype_upper — Check for uppercase character(s)
+ctype_xdigit — Check for character(s) representing a hexadecimal digit
