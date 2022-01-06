@@ -1,0 +1,26 @@
+TYPES OF LABELS
+1).Empty Label
+Syntax :
+<Label-name> : ;
+Example :
+exit_label : ;
+It doesn’t contain any statement within label block.
+2). Container Label
+It is a label block which contains at least one statement.
+Syntax :
+<Label-name> : statement;
+Example :
+exit_label : printf(“This is a statement.”);
+
+TYPES OF LABELED BLOCK IN SWITCH
+1) . Case Blocks
+(i) Inner Case Blocks
+(ii) Outer Case Blocks
+2). Default Blocks
+(i) Inner Default Blocks
+(ii) Outer Default Blocks
+Note :: This blocks definition is optional. PHP doesn’t supports outer label blocks but inner label blocks supports. Whenever C language supports both inner label blocks and outer label blocks. The labeled block of switch allows only 256 cases in delimiters for 8-bit compiler.
+Similarly, for n-bit total no. of cases = 2^n cases.
+
+Delimiter 
+A delimiter is one or more characters that separate text strings. Common delimiters are commas (,), semicolon (;), quotes ( ", ' ), braces ({}), pipes (|), or slashes ( / \ ). When a program stores sequential or tabular data, it delimits each item of data with a predefined character.
