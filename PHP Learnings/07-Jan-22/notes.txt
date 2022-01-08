@@ -2450,3 +2450,37 @@ Similarly, for n-bit total no. of cases = 2^n cases.
 
 Delimiter 
 A delimiter is one or more characters that separate text strings. Common delimiters are commas (,), semicolon (;), quotes ( ", ' ), braces ({}), pipes (|), or slashes ( / \ ). When a program stores sequential or tabular data, it delimits each item of data with a predefined character.
+
+Working with break in default case
+If there are n no. of cases then the actual position of default is at (n+1)th position.
+If default case is at (n+1)th condition in this case break statement is optional and if default case is at any condition b/w (1to n) then break becomes mandatory otherwise consecutive chaining effect will be seen.
+
+(ii)Conditional Block
+If we want to execute some line of code on the basis of some given condition, which is not hardcoded, then we must go for decision block.
+Note :: Hardcoded and Softcoded
+// Hardcoded (Static)
+if($email==’deeproshankumar123@gmail.com’ and $password==’1234’){
+echo ‘login success’;
+}else{
+echo ‘Invalid username and password.’;
+} 
+// Softcoded (Dynamic)
+if($email==$dbemail and $password==$dbpassword){
+echo ‘login success.’;
+}else{
+echo ‘Invalid username and password.’;
+}
+
+How to Apply Condition Block
+We can use decision control language construct and keywords.
+1.	if
+2.	if-else
+3.	else-if ladder
+
+Syntax of if statement
+if(<boolean-condition>){
+     // execute this line only if above condition is true.
+}
+•	true ---> Condition true ---> Execute Once Time
+•	false ---> Condition false ---> Execute Zero Time
+•	‘’, null, false, 0 all are treated as boolean false.
