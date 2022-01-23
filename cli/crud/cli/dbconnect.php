@@ -15,7 +15,7 @@ try{
 		
 	){	
 	
-	print_r($conn);
+		#print_r($conn);
 	}else{
 		throw new Exception();
 	}

@@ -10,9 +10,8 @@ try{
 	}else{
 		throw new Exception();
 	}
-
+	
 }catch(Exception $e){
 	echo $e->getMessage();
 	exit('DB Connection Failed '.mysqli_connect_error());
 }
-?>
