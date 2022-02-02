@@ -44,10 +44,6 @@
                 }
             ],
             "description": "Console Table",
-            "support": {
-                "issues": "https://github.com/phplucidframe/console-table/issues",
-                "source": "https://github.com/phplucidframe/console-table/tree/v1.2.4"
-            },
             "time": "2019-03-03T12:17:32+00:00"
         }
     ],
@@ -58,6 +54,5 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "platform-dev": []
 }

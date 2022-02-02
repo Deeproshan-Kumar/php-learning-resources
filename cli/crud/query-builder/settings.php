@@ -19,7 +19,6 @@ return [
 		'password'=>'',
 		'dbname'=>'app2021',
 	],
-	
-	'connection:debug' => false,
+	'connection:debug'=> false,
 
 ];

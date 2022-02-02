@@ -5,16 +5,14 @@ include __DIR__.'/dbconnect.php';
 
 #step2 : prepare the Query
 
-$name = readline('Enter name:');
-$email = readline('Enter Email:');
 
-$sql = "INSERT INTO emp(name,email) values('{$name}','{$email}');";
+$sql = "drop table Deepak;";
 
 
 #step3 : Execute the Query or Fire the Query
 if(mysqli_query($conn,$sql)){
 
-echo 'Record Inserted with pk = '.mysqli_insert_id($conn);
+echo 'table is droped = '.mysqli_insert_id($conn);
 
 }else{
 

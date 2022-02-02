@@ -1,23 +1,19 @@
 <?php
 require __DIR__.'/vendor/autoload.php';
-require_once __DIR__.'/data.php';
+
 $table = new LucidFrame\Console\ConsoleTable();
-
 $table
-   ->addHeader('Sr No.')
-    ->addHeader('Id')
-    ->addHeader('Name')
-    ->addHeader('Email');
-$i=1;
+    ->addHeader('Language')
+    ->addHeader('Year')
+    ->addRow()
+        ->addColumn('PHP')
+        ->addColumn(1994)
+    ->addRow()
+        ->addColumn('C++')
+        ->addColumn(1983)
+    ->addRow()
+        ->addColumn('C')
+        ->addColumn(1970)
+    ->display();
 
-foreach($records as $record){
-   $table->addRow()
-		->addColumn($i)
-        	->addColumn($record['id'])
-        	->addColumn($record['name'])
-		->addColumn($record['email']);
-
-$i++;
-} 
-$table->display();
 ?>

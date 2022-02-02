@@ -6,7 +6,7 @@ include __DIR__.'/dbconnect.php';
 #step2 : prepare the Query
 
 $id = readline('Enter userid:');
-$sql = "Delete from emp where id = '{$id}';";
+$sql = "Delete from emp1 where id = '{$id}';";
 
 #step3 : Execute the Query or Fire the Query
 

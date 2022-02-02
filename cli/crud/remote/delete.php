@@ -5,8 +5,8 @@
 include __DIR__.'/dbconnect.php';
 #step2 : prepare the Query
 
-$id = readline('Enter the userid:');
-$sql = "Delete from comprehension where id = '{$id}';";
+$id = readline('Enter userid:');
+$sql = "Delete from emp where id = '{$id}';";
 
 #step3 : Execute the Query or Fire the Query
 
@@ -19,3 +19,4 @@ if(mysqli_query($conn,$sql)){
 }else{
 	echo 'Records Not Deleted '.mysqli_error($conn);
 }
+
