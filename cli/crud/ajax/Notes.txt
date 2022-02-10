@@ -1,26 +1,24 @@
-Ajax :-
-Ajax stands for Asynchronous Javascript and XML.(Json)
-Ajax will only work under live server environment.
+✍ AJAX
 
-Because Ajax responds to the response send by server itself.
-This Server can like live server.
-xampp, laragon server any server infact cli-server.
+💎 AJAX stands for Asynchronous Javascript and XML (JSON).
+💎 AJAX will only work under live server environment.
+💎 Because AJAX responds to the response send by server itself.
+💎 This server can be like live server.
+💎 XAMPP, Laragon server or CLI server.
+💎 AJAX is useful if we want to perform any live change without refresh within the web page then it's useful.
 
-Ajax is useful if you want to perform any live change without 
-refresh within the web-page then Ajax is useful.
+✍ Syntax
 
-syntax:-
-1. using xttp request object using javascript.   (pro)
-2. using JQuery with ajax.
-3. fetch Api ES 
+💎 Using http request object using JavaScript. (Pro)
+💎 Using jQuery with AJAX.
+💎 Fetch API.
 
+✍ Getting started with AJAX
 
-How to start with ajax:-
-1. we can run ajax request only after, when each and every element of, html is generated.
+💎 We can run AJAX request only after when each element of HTML is generated.
+💎 Because, if we target any id or class and that element is not generate due to internet problem in that scenario we will get null.
 
-Why?
-because if target any element by id and that element is not generated due to internet speed
-in that you will null as a target.
+✍ jQuery Syntax
 
 $(document).ready(function(){
 
@@ -30,97 +28,65 @@ $("selector").method(function(){
 
 });
 
-b --> id = btn click --> paragaraph --> para ---> hii
+✍ Example 
+
 $(document).ready(function(){
     $("#btn").click(function(){
-        $("#para").text("hy");
-        //or
-        $("#para").html("hy");
-    });
+        $("#para").html("Hello");
+        $("#para").text("Hii");
+    })
 });
 
 
-document.getElementById()   #
-document.getElementsByClassName() .
-document.getElementByTagname() Tagname
-document.getElementByName()  name attribute
-querySelectorAll() anything
+.innerHTML => .html() get put => .html("Hello")
+.innerText => .text() get .text() => .text("Hello")
+.src => .attr('src') get .attr('src', '1.png')
+.value => .val() get .val("Hello")
+.title => .attr('title') get .attr('title', 'Home')
 
-<h1 id="h">This is Heading</h1>
-$("#h")
-<h1 class="h">This is Heading</h1>
-$(".h")
-$("h1")
-<p id="para">This is paragaraph
-    <span class="font">
-        <b>This is Bold</b>
-    </span>
-</p
 
-$("#para .font b")
+✍ Events
 
-.innerHTML => .html() get put => .html("hello")
-.innerText => .text() get .text() => .text("hello")
-.src => .attr('src') get .attr('src',"1.png") 
-.value => .val() get set .val("hello")
-.title=> .attr('title') get set=> .attr('title','saloni maurya')
-
-Events:-
-*******
 onclick => .click()
 onkeyup => .keyup()
+onkeydown => .keydown()
 onkeypress => .keypress()
 onchange => .change()
-onmouseover =>.mouseover()
+onmouseover => .mouseover()
 onmouseleave => .mouseleave()
-onload => .load()
+onchange => .change()
 ondblclick => .dblclick()
+oncontextmenu => .contextmenu()
 onsubmit => .submit()
-onclick => .on("click")
 
-syntax of Ajax:-
+
+✍ AJAX Syntax
+
 $.ajax({
-    url:"http://localhost:7000/getemp.php",
-    type:"POST|GET"
-    data:{key:value},
-    dataType:"jsonp|json|formdata|datastring",
-    success:function(response){
+    url : "http://localhost:7000/getEmp.php",
+    type : "GET | POST",
+    data : {key : value},
+    dataType : "json | jsonp | formdata | datastring",
+    success : function(response){
 
     },
-    beforeSend:function(response){
+    beforeSend : function(){
 
     },
-    error:function(xhr,error){
+    error : function(){
 
     },
-    complete:function(response){
+    complete : function(){
 
     },
-    cache:true|false,
-    async:true|false,
+    cache : true | false,
+    async : true | false,
+
 });
 
 
-How to verify ajax Request is Running or not.
-*********************************************
-goto console menu --> network tab 
-select xhr/fetch
-see the response  using preview response.
+✍ How to verify AJAX request is running out or not ?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Goto Console Menu ---> Network tab
+Select xhr/Fetch see the response using preview response. 
 

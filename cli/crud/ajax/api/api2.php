@@ -30,7 +30,6 @@ default:
 endswitch;
 
 function process_get($id=''){
-
      global $resource;
      $query = new Query();
 
@@ -43,7 +42,6 @@ function process_get($id=''){
      }
 
 if($records==false){
-
      $response = array(
           'code'=>201,
           'status'=>false,
@@ -51,7 +49,6 @@ if($records==false){
           'data'=>[],
      );
 }else{
-     
      $response = array(
           'code'=>200,
           'status'=>true,
@@ -64,22 +61,17 @@ header("Content-Type:application/json");
 http_response_code(200);
 echo json_encode($response,JSON_PRETTY_PRINT);
 exit();
-
 }
-
 
 function process_post(){
      global $resource;
-
      $formdata = http_raw();
-
      if(isset($formdata)){
           $query = new Query();
-
+          
           try{
                if($query->insert($resource,$formdata)){
                     $id = $query->getId();
-                    
                     $response = array(
                          'code'=>200,
                          'status'=>true,
@@ -107,11 +99,7 @@ function process_post(){
           echo json_encode($response,JSON_PRETTY_PRINT);
           exit();
      }
-
-
-
 }
-
 
 function process_put($id){
      global $resource;
@@ -135,9 +123,7 @@ function process_put($id){
      }
      else{
           throw new Exception();
-          
      }
-          
      }
      catch(Exception $e){
           $response = array(
@@ -147,10 +133,7 @@ function process_put($id){
                'error'=> $e->getMessage(),
                'data'=> []
           );
-          
      }
-     
-
 
      header("Content-Type:application/json");
      http_response_code(200);
@@ -158,16 +141,12 @@ function process_put($id){
      exit();
 }
 
-
-
-
 function process_patch(){
-
 
 }
 
 function process_delete($id){
-     //method :post formdata _method = DELETE
+     //method : post formdata _method = DELETE
      global $resource;
      $query= new Query();
 
@@ -185,7 +164,6 @@ function process_delete($id){
      else{
           throw new Exception();          
      }
-          
      }
      catch(Exception $e){
           $response = array(
@@ -195,13 +173,10 @@ function process_delete($id){
                'error'=> $e->getMessage(),
                'data'=> []
           );
-          
      }
      
-
      header("Content-Type:application/json");
      http_response_code(200);
      echo json_encode($response,JSON_PRETTY_PRINT);
      exit();
-
 }

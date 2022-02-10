@@ -1,24 +1,19 @@
-what is Api:-
+✍ What is API?
 Api stands for Application Programming Interface.
-Api is a Mechanism by using which One Type Application Can communicate with Another
-Application.
-In general Api is very Big Topic.
+Api is a Mechanism by using which one type application can communicate with another Application.
+In general API is very big topic.
 
-Api are used by different Application to data, from one plateform to another plateform
-Worldometer.com Corona Virus Api
-Any Application A,B,C,D,E,F,G can utilise the Api of Worldmeter.com to get live update
-of corona.
+API are used by different Application to data, from one plateform to another plateform Worldometer.com Corona Virus Api
 
-1. InterOperability : Conversion of one type of language to some common langauge so
-that data can be exchanged without directly converting the one langauge  to another language.
+Any Application A,B,C,D,E,F,G can utilise the Api of Worldmeter.com to get live update of corona.
 
-InterOperability refers to sharing of data, from One Application to Another Application
-without changing native langauge, by means of some common Interconversion langauge.
-or
-Sharing of data from One App to another App without directly converting the native
+InterOperability : Conversion of one type of language to some common langauge so that data can be exchanged without directly converting the one langauge  to another language.
+
+InterOperability refers to sharing of data, from One Application to Another Application without changing native langauge, by means of 
+some common Interconversion langauge or sharing of data from One App to another App without directly converting the native
 langauge is called InterOperability.
 
-for Eg:
+For Eg:
 Android ---> Json ---> Java
 Python  ----> JSON ----> java
 Python -----> JSON ----> PHP
@@ -109,14 +104,14 @@ Request : HEAD
 "keyword",[],
 }
 
-
-what is Postman?.
+What is Postman?.
 postman is a client tool to send the pure http request to the Server.
 and testing Api's.
 postman has set of http method to Intersepct the REST API, by using GET,POST,PUT,PATCH,DELETE...
 and also has different payloads which can be binded as header, and body content.
 
-What is difference B/w REST & SOAP?.
+What is difference B/w REST & SOAP?
+
 1. Rest : Respresentational State Transfer
 1. Soap : Simple Object Access Protocol
 
@@ -135,7 +130,7 @@ What is difference B/w REST & SOAP?.
 6. Rest : data representation is in Json,yml
 6. Soap : data representation is in XML
 
-Api Related Terms:-
+API Related Terms :
 1. http method : these are set of method which are defined to perform some 
 unique Operation
 In Rest Api 
@@ -146,31 +141,28 @@ R : read the data HTTP/1.1 GET
 U : update the data HTTP/1.1 PUT AND PATCH
 	PUT : full update
 	PATCH : partial update
-D : Delete the data  HTTP/1.1 DELETE
-
+D : delete the data  HTTP/1.1 DELETE
 
 HTTP has two version 1.1 and 2.1
-headers:- are the type of payload(information) attached to request before data.
+Header :
+headers are the type of payload(information) attached to request before data.
+headers can contain information like, http satus :200, or 404, 500
+header has content Information like content-type:text/html content-type:
+application/json, content-type:Image/jpeg all these are called MIME types.
+header has allowed methods : GET,POST,...
+headers can be used to check if request are Authentic or not
+headers can be used to enable cors policy (content origin request security policy)
 
-	headers can contain information like, http satus :200, or 404, 500
-	header has content Information like content-type:text/html content-type:
-	application/json, content-type:Image/jpeg all these are called MIME types.
-	header has allowed methods : GET,POST,...
-	headers can be used to check if request are Authentic or not
-	headers can be used to enable cors policy (content origin request security policy)
-
-Body Content : it refers to form data, supplied from form, or any client like postman
-		Types of Body data
-			1. formdata : form
-        		2. urlencoded data
-        		3. www-encoded data
-			4. raw data : Json 
+Body Content : 
+It refers to form data, supplied from form, or any client like postman
+	Types of Body data
+	1. formdata : form
+	2. urlencoded data
+	3. www-encoded data
+	4. raw data : Json 
 
 
-How to Api in PHP?
-******************
 
- 
 
 
 

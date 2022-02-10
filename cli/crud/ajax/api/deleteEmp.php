@@ -11,7 +11,6 @@ $id = post('id');
 $query = new Query();
 
 if($query->delete('emp')->where('id',$id)->commit()){
-    
 $response = array(
     'code'=>200,
     'status'=>true,
@@ -19,7 +18,6 @@ $response = array(
     'error'=>false,
     'data'=>[]
 );
-
 }else{
     $response = array(
         'code'=>201,
@@ -29,9 +27,7 @@ $response = array(
         'data'=>[],
     );
 }
-
 }else{
-
     $response = array(
         'code'=>201,
         'status'=>false,
@@ -39,7 +35,6 @@ $response = array(
         'error'=>false,
         'data'=>[],
     );
-
 }
 
 echo json_encode($response,JSON_PRETTY_PRINT);
