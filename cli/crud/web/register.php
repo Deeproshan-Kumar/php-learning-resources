@@ -8,7 +8,7 @@
         <form action="<?php echo url("registerHandler.php"); ?>" method="POST">
             Name: <input type="text" name="name" > <br>
             Email: <input type="email" name="email"> <br>
-            <input type="submit" value="submit" name="save">
+            <input type="submit" value="Submit" name="save">
         </form>
     </body>
 </html>

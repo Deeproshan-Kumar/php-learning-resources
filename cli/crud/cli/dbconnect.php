@@ -11,7 +11,9 @@ try{
 		$settings['db:config']['host'],
 		$settings['db:config']['user'],
 		$settings['db:config']['password'],
-		$settings['db:config']['dbname'])
+		$settings['db:config']['dbname']
+		
+		)
 		
 	){	
 	

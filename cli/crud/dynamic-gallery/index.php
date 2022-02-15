@@ -45,7 +45,7 @@ include_once __DIR__.'/connection/dbconnect.php';
         <?php 
         $sql = "SELECT * FROM gallery";
         $result = mysqli_query($conn, $sql);
-        if(mysqli_num_rows($result)>0){
+        if(mysqli_num_rows($result) > 0){
             while($fetch = mysqli_fetch_assoc($result)){
                 // echo $fetch['image'];
             ?>

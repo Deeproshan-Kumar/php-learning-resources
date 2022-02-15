@@ -14,7 +14,7 @@ $err_msg = '';
 if($error==0){
     $new_file = $filename."_".time().".".$extension;
     $new_location = __DIR__."/uploads/{$new_file}";
-    if(move_uploaded_file($tmp_path,$new_location)){
+    if(move_uploaded_file($tmp_path, $new_location)){
         echo 'File has been uploaded !!';
     }else{
         echo 'Oops something went wrong !!';

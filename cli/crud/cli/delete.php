@@ -10,7 +10,7 @@ $sql = "Delete from emp1 where id = '{$id}';";
 
 #step3 : Execute the Query or Fire the Query
 
-if(mysqli_query($conn,$sql)){
+if(mysqli_query($conn, $sql)){
 	if(mysqli_affected_rows($conn)>0){
 		echo 'Record Deleted Successfully';
 	}else{

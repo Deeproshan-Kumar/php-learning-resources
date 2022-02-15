@@ -1,4 +1,6 @@
-<?php require_once __DIR__.'/function.php';
+<?php 
+
+require_once __DIR__.'/function.php';
 include_once __DIR__.'/query-builder/query.php';
 
 $id = get('id');

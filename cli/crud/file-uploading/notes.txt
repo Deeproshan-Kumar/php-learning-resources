@@ -55,22 +55,6 @@ where file is finally uploaded.
 
 3. Send the uploaded file name to the db.
 
-Task :
-
-gallery
-    id file
-    1  1.png
-
-uploads
-    1.png
-    
-    $filenames = select('file')->table('gallery')->allrecords();
-
-    foreach($filenames as $images){
-        echo "<img src='uploads/{$images["file"]}'>"
-    }
-    
-
 
 
 

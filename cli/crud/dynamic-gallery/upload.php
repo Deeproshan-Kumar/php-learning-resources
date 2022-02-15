@@ -17,7 +17,7 @@ if($error==0){
     $new_location = __DIR__."/uploads/{$new_file}";
     if(move_uploaded_file($tmp_path, $new_location)){
         echo 'File has been uploaded !!';
-        $sql = "INSERT INTO gallery(image) VALUES('$new_file'); ";
+        $sql = "INSERT INTO gallery(image) VALUES('{$new_file}'); ";
         $result = mysqli_query($conn, $sql);
     }
     

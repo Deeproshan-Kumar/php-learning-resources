@@ -1,4 +1,5 @@
 <?php
+
 require_once __DIR__.'/DB.php';
 //rhis is query connection file
 
@@ -27,6 +28,7 @@ class Query extends DB{
 		}
 		
 }
+
 $query = new Query();
 echo $query->insert('emp',[
       
@@ -43,8 +45,5 @@ echo PHP_EOL;
 echo $query->form()->table('emp')->getQuery();
 echo PHP_EOL;
 echo $query->form('name as n,class as c,email as e,count(*) as cnt,distict')->table('emp')->getQuery();
-
-
-
 
 ?>

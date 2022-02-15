@@ -22,7 +22,7 @@ foreach($data as $row){
 		          ->addColumn($row['id'])  
 		          ->addColumn($row['name'])
 		          ->addColumn($row['email']);
-	$i++;
+			$i++;
 }
 
 

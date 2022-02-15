@@ -10,15 +10,4 @@ if(!empty($id)){
         exit('Cannot Deleted the records');
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 ?>

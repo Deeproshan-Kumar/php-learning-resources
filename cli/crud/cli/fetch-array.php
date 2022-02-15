@@ -2,7 +2,7 @@
 $result_set=mysqli_query($conn,$sql);
 if(mysqli_num_rows($result_set)>0){
 	$data=[];
-	while($row = mysqli_fetch_array($result_set,MYSQLI_BOTH){//we can use index or key name to get the table
+	while($row = mysqli_fetch_array($result_set, MYSQLI_BOTH){//we can use index or key name to get the table
 		
 		$data[]= $row;
 		
